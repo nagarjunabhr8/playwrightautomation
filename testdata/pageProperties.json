@@ -1,0 +1,95 @@
+{
+  "login": {
+    "validUser": {
+      "email": "testuser@test.com",
+      "password": "test@1234"
+    },
+    "invalidUser": {
+      "email": "invalid@test.com",
+      "password": "wrongpassword"
+    }
+  },
+  "registration": {
+    "validUser": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "nagarjuna.keviti@gmail.com",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "emptyName": {
+      "name": "",
+      "apartment": "303",
+      "email": "test@gmail.com",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "emptyEmail": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "invalidEmail": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "invalid-email",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "emptyPhone": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "test@gmail.com",
+      "phone": "",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "shortPhone": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "test@gmail.com",
+      "phone": "12345",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "emptyPassword": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "test@gmail.com",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": ""
+    },
+    "mismatchedPassword": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "test@gmail.com",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "test@1234",
+      "confirmPassword": "wrong@5678"
+    },
+    "emptyApartment": {
+      "name": "TestUser",
+      "apartment": "",
+      "email": "test@gmail.com",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "test@1234"
+    },
+    "weakPassword": {
+      "name": "TestUser",
+      "apartment": "303",
+      "email": "test@gmail.com",
+      "phone": "8523005558",
+      "role": "OWNER",
+      "password": "123"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/node": "^25.5.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.0"
+  }
+}
