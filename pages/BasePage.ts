@@ -81,6 +81,16 @@ export class BasePage {
     await this.page.locator(locator).pressSequentially(text, { delay });
   }
 
+  async typeWithEnterAfterEachChar(locator: string, text: string, delay = 100): Promise<void> {
+    const element = this.page.locator(locator);
+    await element.click();
+    for (const char of text) {
+      await element.pressSequentially(char, { delay });
+      await this.page.keyboard.press('Enter');
+      await this.page.waitForTimeout(delay);
+    }
+  }
+
   async clearInput(locator: string): Promise<void> {
     await this.page.locator(locator).clear();
   }
